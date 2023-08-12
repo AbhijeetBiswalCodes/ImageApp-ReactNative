@@ -27,7 +27,7 @@ const FullScreenImg = () => {
         text1: 'Downloading...',
         visibilityTime: 1000,
         autoHide: false, 
-      });
+      }); 
 
       const dirs = RNFetchBlob.fs.dirs;
       const timestamp = new Date().getTime();
@@ -57,10 +57,19 @@ const FullScreenImg = () => {
           autoHide: true,
         });
       } else {
-        console.error('Download failed:', response.respInfo.status);
+        console.error('Download failed:', response.respInfo.status); 
       }
     } catch (error) {
-      console.error('Download error:', error);
+      console.error('Download error:', error); 
+
+      Toast.show({
+        type: 'error',
+        position: 'top',
+        text1: 'Download failed', 
+        text2:'check your internet connection' ,
+        visibilityTime: 2000,
+        autoHide: true, 
+      });
     }
   };
 
