@@ -1,3 +1,7 @@
+App Preview 
+
+![alt text](https://drive.google.com/uc?id=1-mlxyIvbQLt2_3ipfzu8n0smgenUpftB)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
